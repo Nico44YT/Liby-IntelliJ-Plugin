@@ -1,0 +1,44 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>nazario.LibyTemplates</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Liby Templates</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="Nico_44YT@proton.me" url="https://nico44yt.github.io/">Nico_44</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+        Custom Liby Template
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+        <group id="nazario.liby_templates.LibyActions" text="Liby Templates" popup="true" icon="/icons/liby_icon.svg">
+            <add-to-group group-id="NewGroup" anchor="last">
+
+            </add-to-group>
+        </group>
+
+        <action id="Create.Liby.RegistryTemplate" class="nazario.liby_templates.LibyRegistryAction" text="Registry Templates" icon="/icons/liby_icon.svg">
+            <add-to-group group-id="nazario.liby_templates.LibyActions" anchor="first"/>
+        </action>
+        <action id="Create.Liby.GenericTemplate" class="nazario.liby_templates.LibyGenericAction" text="Generic Templates" icon="/icons/liby_icon.svg">
+            <add-to-group group-id="nazario.liby_templates.LibyActions" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

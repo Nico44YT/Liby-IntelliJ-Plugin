@@ -1,0 +1,12 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.util.math.BlockPos;
+
+public class ${NAME}Entity extends BlockEntity {
+    public ${NAME}Entity(BlockPos pos, BlockState state) {
+        super(type, pos, state);
+    }
+
+}

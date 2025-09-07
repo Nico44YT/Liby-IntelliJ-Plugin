@@ -1,0 +1,11 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import nazario.liby.api.registry.helper.LibyEntityTypeRegistry;
+
+public class ${NAME} {
+    public static final LibyEntityTypeRegistry REGISTRY = LibyEntityTypeRegistry.of(/* ModId */);
+
+    public static void register() {
+
+    }
+}

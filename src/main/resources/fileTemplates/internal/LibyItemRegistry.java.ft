@@ -1,0 +1,15 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import nazario.liby.api.registry.helper.LibyItemRegistry;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+
+public class ${NAME} {
+
+    public static final LibyItemRegistry REGISTRY = LibyItemRegistry.of(/* ModId */);
+
+    public static void register() {
+        ItemGroupEvents.modifyEntriesEvent(/* Group */).register(context -> {
+
+        });
+    }
+}

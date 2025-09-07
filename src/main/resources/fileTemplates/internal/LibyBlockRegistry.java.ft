@@ -1,0 +1,14 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import nazario.liby.api.registry.helper.LibyBlockEntityRegistry;
+import nazario.liby.api.registry.helper.LibyBlockRegistry;
+
+public class ${NAME} {
+
+    public static final LibyBlockRegistry REGISTRY = LibyBlockRegistry.of(/* ModId */);
+    public static final LibyBlockEntityRegistry BLOCK_ENTITY_REGISTRY = LibyBlockEntityRegistry.of(/* ModId */);
+
+    public static void register() {
+
+    }
+}

@@ -5,4 +5,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "LibyNewClasses"
+rootProject.name = "Liby Templates"
